@@ -10,5 +10,5 @@ To run this project on your local machine, follow these steps:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/blog-app.git
-cd blog-app
+git clone https://dev.azure.com/ryder4676/wdd430/_git/nextjsBlog
+cd blog
