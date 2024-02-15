@@ -16,7 +16,7 @@ export default async function Home() {
         />
         <div className="max-w-md text-center">
           <h1 className="text-4xl font-bold mb-4">
-            Welcome to My Next.js Learning Blog
+            Welcome to the Next.js Learning Blog
           </h1>
           <p className="text-gray-700">
             Explore a journey through the world of Next.js as we share our
