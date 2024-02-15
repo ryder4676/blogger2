@@ -8,7 +8,7 @@ export default async function Home() {
   console.log(user);
   return (
     <main className="max-w-4xl mx-auto my-5">
-      <div className="flex flex-col items-center py-14 bg-gray-100">
+      <div className="flex flex-col items-center py-14 bg-gray-200">
         <img
           src="/next.png" // Add the path to your blog logo or any image you prefer
           alt="Next.js Logo"
@@ -19,9 +19,9 @@ export default async function Home() {
             Welcome to My Next.js Learning Blog
           </h1>
           <p className="text-gray-700">
-            Explore my journey through the world of Next.js as I share my
+            Explore a journey through the world of Next.js as we share our
             experiences, challenges, and discoveries. From the basics to
-            advanced concepts, this blog is a reflection of my learning process
+            advanced concepts, this blog is a reflection of or learning process
             and a resource for those on a similar path.
           </p>
         </div>
