@@ -18,11 +18,16 @@ const Header = async () => {
 
         <ul className='flex space-x-4'>
           
-          <li> <Link href='/addblog'>
-          <span>{'\u002B'}</span>New Blog
-      </Link></li>
+        <li>
+  <Link href='/addblog' className='text-white font-bold text-xl hover:underline'>
+    
+    Create Blog
+    
+  </Link>
+</li>
+
           <li>
-            <Link href='/blogs' className='text-white hover:underline'>
+            <Link href='/blogs' className='text-white font-bold text-xl hover:underline'>
               Blogs
             </Link>
           </li>
@@ -32,7 +37,7 @@ const Header = async () => {
             <li>
               <Link
                 href='/api/auth/signin'
-                className='text-white hover:underline'
+                className='text-white font-bold text-xl hover:underline'
               >
                 login
               </Link>
