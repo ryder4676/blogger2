@@ -1,6 +1,5 @@
 
 import React from "react";
-
 import  getServerSession  from "next-auth";
 import Footer from "@/components/footer";
 import { authOptions } from "@/lib/auth";
@@ -13,11 +12,11 @@ export default async function Home() {
     <main className="max-w-4xl mx-auto my-5">
       <div className="flex flex-col items-center py-14 bg-gray-200">
       <Image
-            src="/public/next.png" // Add the path to your blog logo or any image you prefer
+            src="/next.PNG" // Add the path to your blog logo or any image you prefer
             alt="Next.js Logo"
             className="w-32 h-32 rounded-full"
-            width={90}
-            height={90}
+            width={190}
+            height={190}
           />
         <div className="max-w-md text-center">
           <h1 className="text-4xl font-bold mb-4">
