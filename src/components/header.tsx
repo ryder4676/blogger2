@@ -4,6 +4,7 @@ import ButtonLogout from './button-logout';
 import ButtonFormNewPost from './button-form-new-post';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
+import Image from 'next/image';
 
 const Header = async () => {
   const session = await getServerSession(authOptions);
@@ -14,10 +15,12 @@ const Header = async () => {
     <header className='bg-blue-500 p-4'>
       <nav className='flex justify-between items-center  max-w-4xl mx-auto'>
         <Link href="/" className="text-white text-2xl font-bold">
-          <img
+          <Image
             src="/next.png" // Add the path to your blog logo or any image you prefer
             alt="Next.js Logo"
             className="w-32 h-32 rounded-full"
+            width={90}
+            height={90}
           />
         </Link>
 
