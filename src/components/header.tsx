@@ -16,7 +16,7 @@ const Header = async () => {
       <nav className='flex justify-between items-center  max-w-4xl mx-auto'>
         <Link href="/" className="text-white text-2xl font-bold">
           <Image
-            src="/next.png" // Add the path to your blog logo or any image you prefer
+            src="/../next.png" // Add the path to your blog logo or any image you prefer
             alt="Next.js Logo"
             className="w-32 h-32 rounded-full"
             width={90}
