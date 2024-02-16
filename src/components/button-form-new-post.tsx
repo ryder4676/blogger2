@@ -1,7 +1,7 @@
 "use client";
 
 // ButtonFormNewPost component
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 const ButtonFormNewPost = () => {
   const router = useRouter();

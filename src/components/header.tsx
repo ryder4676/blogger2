@@ -1,13 +1,16 @@
-import { getCurrentUser } from '@/lib/session';
+import { SessionProvider } from 'next-auth/react';
 import Link from 'next/link';
 import ButtonLogout from './button-logout';
 import ButtonFormNewPost from './button-form-new-post';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 
 const Header = async () => {
-  const user = await getCurrentUser();
+  const session = await getServerSession(authOptions);
   
 
-  return (
+  return (<>
+  
     <header className='bg-blue-500 p-4'>
       <nav className='flex justify-between items-center  max-w-4xl mx-auto'>
         <Link href="/" className="text-white text-2xl font-bold">
@@ -19,7 +22,7 @@ const Header = async () => {
         </Link>
 
         <ul className='flex space-x-4'>
-          {user?.name ? (
+          {session?.user?.name ? (
             <ButtonFormNewPost />
           ) : (
             <li>
@@ -35,7 +38,7 @@ const Header = async () => {
             </Link>
           </li>
 
-          {user?.name ? (
+          {session?.user?.name ? (
             <ButtonLogout />
           ) : (
             <li>
@@ -50,6 +53,7 @@ const Header = async () => {
         </ul>
       </nav>
     </header>
+    </>
   );
 };
 

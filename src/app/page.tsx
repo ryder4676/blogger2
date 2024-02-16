@@ -1,11 +1,13 @@
+
 import React from "react";
 
-import { getCurrentUser } from "../lib/session";
+import  getServerSession  from "next-auth";
 import Footer from "@/components/footer";
+import { authOptions } from "@/lib/auth";
 
 export default async function Home() {
-  const user = await getCurrentUser();
-  console.log(user);
+  const session =  await getServerSession(authOptions);
+  console.log(session);
   return (
     <main className="max-w-4xl mx-auto my-5">
       <div className="flex flex-col items-center py-14 bg-gray-200">
