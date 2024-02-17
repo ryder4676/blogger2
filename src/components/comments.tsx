@@ -15,6 +15,7 @@ const Comments: FC<CommentsProps> = async ({ postId }) => {
     },
   });
 
+
   return (
     <div className='mt-8'>
       <h2 className='text-2xl font-bold'>Comments</h2>
@@ -36,5 +37,6 @@ const Comments: FC<CommentsProps> = async ({ postId }) => {
     </div>
   );
 };
+
 
 export default Comments;

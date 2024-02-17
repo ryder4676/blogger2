@@ -28,5 +28,12 @@ export const posts = [
   title: 'Blog Post 5',
   content: 'this is content post',
   username: 'john12345',
-  }
+  },
+  {
+    id: 6,
+    title: 'Blog Post 6',
+    content: 'this is content post',
+    username: 'john123456',
+    }
+  
 ];
