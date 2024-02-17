@@ -1,5 +1,5 @@
 'use client';
-import { FormData } from '@/typest/blog';
+import { FormData } from '@/types/blog';
 import axios from 'axios';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
