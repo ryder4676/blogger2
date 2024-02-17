@@ -34,17 +34,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# Blog App with Next.js, TypeScript, Tailwind CSS, and Prisma
-
-## Introduction
-This project is a simple blog application built using Next.js, TypeScript, Tailwind CSS, and Prisma. The goal is to provide users with a platform to create and view blog posts. Whether you want to share your thoughts or explore what others have written, this app allows you to do both seamlessly.
-
-## Getting Started
-To run this project on your local machine, follow these steps:
-
-### 1. Installation Process
-Clone the repository to your local machine:
-
-```bash
-git clone https://dev.azure.com/ryder4676/wdd430/_git/nextjsBlog
-cd blog

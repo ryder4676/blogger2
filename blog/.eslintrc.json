@@ -1,0 +1,5 @@
+{
+  "extends": ["next/core-web-vitals", "eslint-config-next"],
+  "parser": "@babel/eslint-parser",
+  "plugins": ["@babel"]
+}
