@@ -33,6 +33,7 @@ const FormComment: FC<FormCommentProps> = ({ postId }) => {
     }
   };
 
+
   return (
     <div>
       <div className='mt-4'>
@@ -60,5 +61,6 @@ const FormComment: FC<FormCommentProps> = ({ postId }) => {
     </div>
   );
 };
+
 
 export default FormComment;

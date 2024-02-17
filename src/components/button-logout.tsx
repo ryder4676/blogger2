@@ -1,5 +1,4 @@
 'use client';
-
 import { signOut } from 'next-auth/react';
 
 const ButtonLogout = () => {
@@ -9,5 +8,6 @@ const ButtonLogout = () => {
     </button>
   );
 };
+
 
 export default ButtonLogout;

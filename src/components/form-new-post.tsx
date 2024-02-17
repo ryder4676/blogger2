@@ -29,6 +29,8 @@ const FormNewPost = () => {
     });
   };
 
+
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -75,5 +77,6 @@ const FormNewPost = () => {
     </form>
   );
 };
+
 
 export default FormNewPost;
