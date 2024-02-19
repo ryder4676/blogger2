@@ -6,13 +6,14 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import Image from 'next/image';
 
+
 const Header = async () => {
   const session = await getServerSession(authOptions);
-  
+  const shouldShowLink = false;
 
   return (<>
   
-    <header className='bg-blue-500 p-4'>
+    <header style={{ backgroundColor: '#2E5B7F' }} className='p-4'>
       <nav className='flex justify-between items-center  max-w-4xl mx-auto'>
         <Link href="/" className="text-white text-2xl font-bold">
           <Image
@@ -25,15 +26,19 @@ const Header = async () => {
         </Link>
 
         <ul className='flex space-x-4'>
-          {session?.user?.name ? (
-            <ButtonFormNewPost />
-          ) : (
-            <li>
-              <Link href='/addblog'>
-                
-              </Link>
-            </li>
-          )}
+  {session?.user?.name ? (
+    <ButtonFormNewPost />
+  ) : (
+    shouldShowLink && (
+      <li>
+        <Link href='/addblog'>
+          <a className='text-blue-500 hover:underline'>
+            Create Blog
+          </a>
+        </Link>
+      </li>
+    )
+  )}
 
           <li>
             <Link href='/blogs' className='text-white font-bold text-xl hover:underline'>
