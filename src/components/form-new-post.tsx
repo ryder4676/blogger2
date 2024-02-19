@@ -57,9 +57,6 @@ const FormNewPost = () => {
         />
       </div>
       <div className='mb-4'>
-      <label htmlFor="content" className="block text-sm font-medium text-gray-700">
-    Content
-  </label>
         <ReactTextareaAutosize
           minRows={5}
           name='content'
